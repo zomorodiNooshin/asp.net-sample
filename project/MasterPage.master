@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html dir="rtl">
+<head runat="server">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/countUp.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <script src="js/keyboard.utility.js"></script>
+    <script src="js/aryavtd.maxlength.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="ba-color">
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <asp:Label ID="logonv" runat="server">AryaVandidad</asp:Label>
+                <asp:Panel ID="vavdivpic" runat="server" CssClass="abc">
+                    <asp:Image ID="NavImage" runat="server" CssClass="d-inline-block align-top navimgformat" />
+                </asp:Panel>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <%--<a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>--%>
+                            <asp:HyperLink CssClass="nav-link sr-only" runat="server" NavigateUrl="#" ID="hprLink">خانه</asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a class="nav-link" href="person.aspx">register</a>--%>
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprRegister" NavigateUrl="person.aspx">ثبت نام</asp:HyperLink>
+
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprSearch" NavigateUrl="search.aspx">جستجو</asp:HyperLink>
+                            <%--<a class="nav-link" href="search.aspx">search</a>--%>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a class="nav-link " href="Default.aspx">statistics</a>--%>
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprStatistics" NavigateUrl="Default.aspx">آمار </asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a class="nav-link " href="Default.aspx">statistics</a>--%>
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprRegisteredPerson" NavigateUrl="PersonalList.aspx">لیست ثبت نامی ها </asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a class="nav-link " href="Default.aspx">statistics</a>--%>
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprAdvancedSearch" NavigateUrl="PersonalListArgument.aspx">جستجو پیشرفته </asp:HyperLink>
+                        </li>
+                        <li class="nav-item">
+                            <%--<a class="nav-link " href="LogInPage.aspx">log in</a>--%>
+                            <asp:HyperLink CssClass="nav-link" runat="server" ID="hprLogin" NavigateUrl="~/pagelogin.aspx">ورود</asp:HyperLink>
+
+                        </li>
+                        
+                        <li>
+                            <asp:Panel ID="secondNav" runat="server" CssClass="navbar navbar-light bg-light">
+                                <asp:Label ID="Label1" runat="server">کاربر گرامی</asp:Label>
+                                <asp:Label ID="lblNavName" runat="server"></asp:Label>
+                                <asp:Label ID="lblVavLastName" runat="server"></asp:Label>
+                                <asp:Label ID="Label2" runat="server"> خوش آمدید</asp:Label>
+                            </asp:Panel>
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button ID="hprlogout" runat="server" CssClass="nav-link" Text="خروج" OnClick="hprlogout_Click" />
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <asp:ContentPlaceHolder ID="perimage" runat="server"></asp:ContentPlaceHolder>
+        <h3>
+            <asp:ContentPlaceHolder ID="perheader" runat="server"></asp:ContentPlaceHolder>
+        </h3>
+        <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+       
+    </form>
+</body>
+</html>

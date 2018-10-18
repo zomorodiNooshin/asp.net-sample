@@ -1,0 +1,14 @@
+﻿<asp:GridView runat="server" 
+    SkinID="DefaultGridView" 
+    CssClass=""
+    AutoGenerateColumns="false" 
+    AllowPaging="true">
+    <HeaderStyle CssClass="gvrow-header" />
+    <RowStyle CssClass="gvrow-odd" />
+    <AlternatingRowStyle CssClass="gvrow-even" />
+    <SelectedRowStyle CssClass="gvrow-selected" />
+    <EditRowStyle CssClass="gvrow-edit" />
+    <EmptyDataRowStyle CssClass="gvrow-empty" />
+    <FooterStyle CssClass="gvrow-footer" />
+    <PagerStyle CssClass="gvrow-pager" />
+</asp:GridView>

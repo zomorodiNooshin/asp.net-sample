@@ -1,0 +1,167 @@
+﻿*, html, body {
+}
+
+
+input[type="text"] {
+    border-radius: 2px;
+}
+
+    input[type="text"]:focus {
+        border: 1px solid #a658ff;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        /*box-shadow: rgba(0,0,0,0.1) 10px 10px;*/
+    }
+
+.my-btn {
+    background: #a658ff;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 5px 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.ba-color {
+    background-color: #e8f2fc;
+}
+
+.ribbon {
+    /*background-color:#012255;*/
+    height: 140px;
+    background-color: #87badd;
+    background-image: linear-gradient(132deg, #87badd 0%, #083768 100%);
+    position: relative;
+}
+
+.imgclass {
+    width: 30px;
+    height: 30px;
+}
+
+.certainbox {
+    background-color: white;
+    height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.picsmall {
+    width: 10rem;
+}
+
+.maxlength-remain {
+    font-size: 0.8em;
+    color: #55f;
+}
+
+.csautosize {
+    max-height: 100px;
+}
+
+.report {
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+    border: 50px;
+}
+
+.logIn {
+    margin-right: 500px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+/*table td>input{
+    margin-right:15px;
+}*/
+table td > input + label {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.navimgformat {
+    width: 50px;
+    height: 50px;
+}
+
+.abc {
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.input-group-addon:not(:last-child) {
+    border-left: 0;
+    border-right: 1px solid #c6c9cb;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .form-control:not(:first-child) {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.panperson {
+    outline-style: solid;
+    background-color: #c7f3c7;
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: green;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 50px;
+}
+/*.myitem{
+    width:200px;
+    height:20px;
+    border:2px solid;
+    background:red;
+}*/
+table, th, td {
+    border: 1px solid black;
+}
+
+.ArgumentPic {
+    border-radius: 50%;
+    border: solid 1px;
+}
+
+.ColPerson {
+    text-align: center;
+    background-color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+.ColPerson2 {
+    text-align: right;
+   
+    font-size: 20px;
+   
+}
+
+
+
+.input-group-addon:not(:first-child) {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ghj {
+    border: 2px solid;
+    margin: 5px;
+}
+.btnsearch{
+    padding:32px;
+}

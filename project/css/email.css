@@ -1,0 +1,16 @@
+﻿body {
+}
+
+.emailbody1 {
+    margin-top:50px;
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+       padding:10px;
+}
+.emailbody2{
+    border: 1px solid black;
+    padding:20px;
+}
+h6{
+    text-shadow: 3px 2px #f7def5;
+}
